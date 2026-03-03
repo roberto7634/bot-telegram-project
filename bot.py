@@ -7,7 +7,8 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import A4
-
+print("TOKEN VALUE:", TOKEN)
+print("TOKEN LENGTH:", len(TOKEN) if TOKEN else 0)
 import os
 TOKEN = os.environ.get("TOKEN")
 
@@ -179,3 +180,4 @@ def main():
 
 if __name__=="__main__":
     main()
+
